@@ -73,13 +73,8 @@ public class Fan2 {
         return speed;
     }
 
-    public void setOn(boolean isOn) {
-        this.isOn = isOn;
-        System.out.println("Fan is " + (isOn ? "ON" : "OFF") + " (set via setter)");
-    }
-
-    public void setSpeed(FanSpeed speed) {
-        this.speed = speed;
-        System.out.println("Fan speed set to " + speed + " (set via setter)");
+    public String toString() {
+        return (isOn ? "ON" : "OFF") + ", Speed: " + speed;
     }
 }
+
